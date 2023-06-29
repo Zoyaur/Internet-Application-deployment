@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title> E-Bookpolis </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Login From</title>
+
+    <!--<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    {{>header}} -->
+   <link rel="stylesheet" href="stylee.css">
+  </head>
+  
+  
+ <body>
+  <script src="app.js"></script>
+ <!---- {{>navbar}} -->
+
+<body>
+<div class="flex">
+<!--h1><center>LOGIN FORM</center></h1-->
+<div class="profile">
+  <img src="image/Capture.png" alt="photo">
+  
+</div>
+
+<form name="myform" action="/login" method="POST"  >
+ 
+  <div class="container">
+    <h1><center>LOGIN FORM</center></h1>
+    <div>
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+</div>
+<div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        </div>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+    <!--<button onclick="window.location.href='Home.html';">Login</button> -->
+    <!--button onclick="return validateForm() " >Login</button-->
+    <div>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+
+       <button  class="submit" type="submit">SUBMIT</button></div>
+    <label>
+    
+     <span class="psw"> Not a Member   <a href="/register.hbs"> <strong>RegisterNow</strong></a></span>
+       
+    
+    </label>
+   </div>
+  </div>
+
+  <!--div class="containe" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Make Yourself Register</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div--->
+</form>
+<style>
+  .flex{
+      display: flex;
+}
+  .container {
+    
+        padding: 77px;
+    margin: -13% -45% -10% -1%;
+    background-color: rgb(219,372,244);
+    height: 83%
+   
+  }
+
+    
+    input[type=text], input[type=password] {
+    width: 81%;
+    padding: 27px;
+    margin: 24px 0px 3px 0;
+    display: inline-block;
+    background: #f1f1f1;
+    background: #F1F2F9
+}
+.cancelbtn {
+    width: 102%;
+    padding: 17px 53px;
+    background-color: #0a0606;
+    margin: 56% 25% 25% -1%;
+}
+.profile{
+  image-rendering: auto;
+}
+  
+  h1{
+    {
+    background-color: #efefef;
+    color: #0a0606;
+  }
+  }
+</style>
+
+<div class="footer2">
+  <h4 style="color:white;">Copyright@freebook.pvt</h4>
+</div>
+</body>
+</html>
